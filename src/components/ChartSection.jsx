@@ -68,20 +68,26 @@ const ChartSection = ({ transactions }) => {
           <Line type="monotone" dataKey="balance" stroke="#6366F1" />
         </LineChart>
       </div>
-      <div className="bg-card p-6 rounded-xl shadow-sm">
+      <div className="bg-card p-6 rounded-xl shadow-sm ">
         <p className="text-textPrimary font-medium">Spending Breakdown</p>
-        {/* <div className="h-40 flex items-center justify-center text-textSecondary">
-          Pie Chart
-        </div> */}
-        <PieChart width={300} height={200}>
-          <Pie data={categoryData} dataKey="value" outerRadius={80}>
-            {categoryData.map((entry, index) => (
-              <Cell key={index} fill={COLORS[index % COLORS.length]} />
-            ))}
-          </Pie>
-          <Tooltip />
-          <Legend verticalAlign="bottom" height={36} />
-        </PieChart>
+        <div className="flex flex-col items-center justify-center mt-2">
+          <PieChart width={300} height={220}>
+            <Pie
+              data={categoryData}
+              dataKey="value"
+              outerRadius={80}
+              cx="50%"
+              cy="48%"
+            >
+              {categoryData.map((entry, index) => (
+                <Cell key={index} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Pie>
+
+            <Tooltip />
+            <Legend verticalAlign="bottom" />
+          </PieChart>
+        </div>
       </div>
     </div>
   );

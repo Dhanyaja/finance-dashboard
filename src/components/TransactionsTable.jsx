@@ -42,7 +42,7 @@ const TransactionsTable = ({ role, setShowModal, transactions }) => {
       {role === "Admin" && (
         <button
           onClick={() => setShowModal(true)}
-          className="bg-primary text-white px-4 py-2 rounded-lg mb-4 hover:opacity-90 transition"
+          className="bg-primary text-white px-4 py-2 rounded-lg mb-4 hover:opacity-90 transition active:scale-95"
         >
           + Add Transaction
         </button>
@@ -69,7 +69,7 @@ const TransactionsTable = ({ role, setShowModal, transactions }) => {
               filteredData.map((t) => (
                 <tr
                   key={t.id}
-                  className="border-b hover:bg-gray-50 h-14 transition"
+                  className="border-b hover:bg-primary/5 h-14 transition border-border"
                 >
                   {/* DATE */}
                   <td className="py-3">

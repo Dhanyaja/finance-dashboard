@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --textPrimary: #0f172a;
+  --textSecondary: #64748b;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --textPrimary: #f1f5f9;
+  --textSecondary: #94a3b8;
+  --border: #334155;
+}

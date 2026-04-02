@@ -34,6 +34,7 @@ const Dashboard = () => {
               transactions={transactions}
             />
           </div>
+          <div className="border-t border-border pt-4 mt-6"></div>
           <div id="insights">
             <Insights transactions={transactions} />
           </div>
