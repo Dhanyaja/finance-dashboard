@@ -1,16 +1,118 @@
-# React + Vite
+# 💰 Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, interactive, and responsive finance dashboard built using React.
+This project demonstrates modern frontend development practices including state management, data visualization, and intuitive UI/UX design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 📊 **Dashboard Overview**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * Total Balance, Income, and Expenses
+  * Real-time calculations from transaction data
 
-## Expanding the ESLint configuration
+* 📈 **Data Visualization**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Line chart for monthly balance trends
+  * Pie chart for category-wise spending
+
+* 📋 **Transactions Management**
+
+  * Search transactions by category
+  * Filter by income/expense
+  * Clean and responsive table UI
+
+* 👥 **Role-Based UI**
+
+  * Viewer: Can only view data
+  * Admin: Can add transactions
+
+* ➕ **Add Transaction**
+
+  * Modal-based input form
+  * Updates UI instantly without refresh
+
+* 💡 **Smart Insights**
+
+  * Highest spending category
+  * Total income vs expenses
+  * Savings calculation
+  * Dynamic insights based on data
+
+* 📱 **Responsive Design**
+
+  * Works across mobile, tablet, and desktop
+  * Adaptive layouts for all sections
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js
+* **Styling:** Tailwind CSS
+* **Charts:** Recharts
+* **State Management:** React Hooks (useState)
+
+---
+
+## 🧠 Key Highlights
+
+* Derived data calculations (no redundant storage)
+* Clean and modular component structure
+* Real-time UI updates without backend
+* Thoughtful UX decisions (active sidebar, smooth scrolling)
+* Focus on simplicity and usability
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Dhanyaja/finance-dashboard.git
+cd finance-dashboard
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 Live Demo
+
+(Will be added after deployment)
+
+---
+
+## 🎯 Approach
+
+The focus of this project was to build a clean and intuitive dashboard while maintaining simplicity.
+Instead of over-engineering, emphasis was placed on:
+
+* Clear data flow
+* Reusable components
+* Real-world UI/UX patterns
+* Meaningful insights from data
+
+---
+
+## 📌 Notes
+
+This project uses mock data and frontend state to simulate real-world behavior without a backend.
+
+---
+
+## 🙌 Author
+
+Dhanyaja Chakram
