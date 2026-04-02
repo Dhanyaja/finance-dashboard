@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Cell,
   Legend,
@@ -10,8 +10,12 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { TransactionContext } from "../context/TransactionContext";
 
-const ChartSection = ({ transactions }) => {
+const ChartSection = () => {
+
+  const {transactions} = useContext(TransactionContext);
+
   const categoryMap = {};
 
   transactions.forEach((t) => {

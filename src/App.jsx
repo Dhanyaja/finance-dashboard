@@ -1,11 +1,11 @@
-import Dashboard from "./pages/Dashboard"
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
-    <div className=''>
-      <Dashboard />
+    <div>
+        <Dashboard />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

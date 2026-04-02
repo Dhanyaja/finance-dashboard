@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { transactions as initialData } from "../data/mockData";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import DashboardCards from "../components/DashboardCards";
@@ -11,7 +10,6 @@ import AddTransactionModal from "../components/AddTransactionModal";
 const Dashboard = () => {
   const [role, setRole] = useState("Viewer");
   const [showModal, setShowModal] = useState(false);
-  const [transactions, setTransactions] = useState(initialData);
 
   return (
     <div className="flex bg-bg min-h-screen">
@@ -22,28 +20,26 @@ const Dashboard = () => {
 
         <div className="mt-6 space-y-6">
           <div id="dashboard">
-            <DashboardCards transactions={transactions} />
+            <DashboardCards />
           </div>
           <div id="charts">
-            <ChartSection transactions={transactions} />
+            <ChartSection />
           </div>
           <div id="transactions">
             <TransactionsTable
               role={role}
               setShowModal={setShowModal}
-              transactions={transactions}
             />
           </div>
           <div className="border-t border-border pt-4 mt-6"></div>
           <div id="insights">
-            <Insights transactions={transactions} />
+            <Insights/>
           </div>
         </div>
       </div>
       {showModal && (
         <AddTransactionModal
           setShowModal={setShowModal}
-          setTransactions={setTransactions}
         />
       )}
     </div>

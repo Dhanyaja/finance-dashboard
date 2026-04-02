@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { TransactionContext } from "../context/TransactionContext";
 
-const TransactionsTable = ({ role, setShowModal, transactions }) => {
+const TransactionsTable = ({ role, setShowModal }) => {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
 
+  const { transactions } = useContext(TransactionContext);
+
   const filteredData = transactions.filter((t) => {
-    const matchesSearch = t.category
+    const matchesSearch = (t.category || "")
       .toLowerCase()
       .includes(search.toLowerCase());
 

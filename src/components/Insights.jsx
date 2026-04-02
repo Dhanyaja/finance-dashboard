@@ -1,4 +1,9 @@
-const Insights = ({ transactions }) => {
+import { useContext } from "react";
+import { TransactionContext } from "../context/TransactionContext";
+
+const Insights = () => {
+  const { transactions } = useContext(TransactionContext);
+
   const income = transactions
     .filter((t) => t.type === "income")
     .reduce((acc, curr) => acc + curr.amount, 0);

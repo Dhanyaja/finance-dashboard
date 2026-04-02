@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { TransactionContext } from "../context/TransactionContext";
 
-const AddTransactionModal = ({ setShowModal, setTransactions }) => {
+const AddTransactionModal = ({ setShowModal }) => {
+  const { addTransaction } = useContext(TransactionContext);
+
   const [form, setForm] = useState({
     amount: "",
     category: "",
@@ -17,7 +20,7 @@ const AddTransactionModal = ({ setShowModal, setTransactions }) => {
       type: form.type,
     };
 
-    setTransactions((prev) => [...prev, newTransaction]);
+    addTransaction(newTransaction);
     setShowModal(false);
   };
 
