@@ -54,9 +54,6 @@ const ChartSection = ({ transactions }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="bg-card p-6 rounded-xl shadow-sm">
         <p className="text-textPrimary font-medium">Balance Overview</p>
-        {/* <div className="h-40 flex items-center justify-center text-textSecondary">
-          Line Chart
-        </div> */}
         <LineChart
           width={window.innerWidth < 768 ? 300 : 400}
           height={220}
