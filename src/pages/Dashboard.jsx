@@ -15,7 +15,7 @@ const Dashboard = () => {
     <div className="flex bg-bg min-h-screen">
       <Sidebar />
 
-      <div className="flex-1 p-4 md:p-6 md:ml-64">
+      <div className="flex-1 p-4 md:p-6 md:ml-64 overflow-hidden">
         <Header role={role} setRole={setRole} />
 
         <div className="mt-6 space-y-6">

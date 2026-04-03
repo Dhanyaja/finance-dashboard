@@ -50,8 +50,8 @@ const TransactionsTable = ({ role, setShowModal }) => {
           + Add Transaction
         </button>
       )}
-      <div className="overflow-x-auto">
-        <table className="w-full text-left min-w-[500px]">
+      <div className="overflow-x-auto w-full">
+        <table className="w-full text-left min-w-[600px]">
           <thead>
             <tr className="text-textSecondary border-b">
               <th className="py-3">Date</th>
